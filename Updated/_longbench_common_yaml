@@ -1,7 +1,7 @@
 dataset_path: recursal/longbench-v2
 test_split: train
 output_type: generate_until
-doc_to_text: "Please read the following text and answer the question below.\n\n<text>\n{{context}}\n</text>\n\nWhat is the correct answer to this question: {{question.strip()}}\nChoices:\n(A) {{choices[0]}}\n(B) {{choices[1]}}\n(C) {{choices[2]}}\n(D) {{choices[3]}}\n\nLet's think step by step, then end your response with: \"The correct answer is (X)\" where X is one of A, B, C, or D."
+doc_to_text: !function utils.doc_to_text
 doc_to_target: "{{ ['A','B','C','D'][answer] if answer is number else answer }}"
 generation_kwargs:
   max_gen_toks: 32768
