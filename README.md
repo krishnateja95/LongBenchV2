@@ -22,10 +22,3 @@ LongBench2 breakdown
 19. longbench2_dialogue_history -> 127,567
 20. longbench2_agent_history -> 68,745
 
-
-| Task                         | Before | After  | Delta |
-|------------------------------|--------|--------|-------|
-| longbench2_many_shot         | 66.67% | 71.43% | +4.76% |
-| longbench2_agent_history     | 30.00% | 85.00% | +55.00% |
-| longbench2_dialogue_history  | 42.11% | 63.16% | +21.05% |
-| Average                      | 46.26% | 73.20% | +26.94% |
